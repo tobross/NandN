@@ -1,0 +1,72 @@
+.navgreen {
+background-color: rgba(0, 128, 0, 0.658)
+}
+
+body{
+    background-image: url("../images/page2.png");
+    background-size: cover;
+
+}
+
+.navblue {
+    background-color: cadetblue;
+}
+
+.navgold {
+    background-color: goldenrod;
+}
+
+.charimg {
+    border-bottom: solid 2px goldenrod;
+    border-right: solid 2px goldenrod;
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.charcard {
+    margin-top: 10px;
+    border: solid 2px goldenrod;
+    width: 30% !important;
+    height: auto;
+    float: left;
+    margin-left: 20px !important;
+    background-image: url("../images/page.png");
+
+}
+
+.charbtn {
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.boop {
+    height: 15px;
+}
+.advimg {
+    border-bottom: 2px solid cadetblue;
+    border-right: 2px solid cadetblue;
+    display: block;
+    max-width: 60%;
+    max-height: 400px;
+    height: auto;
+    width: auto;
+}
+
+.advcard{
+    background-image: url("../images/page.png");
+    width: 1005;
+    height: auto;
+    border: solid 2px cadetblue;
+    margin-top: 10px;
+}
+
+.btn-blue{
+    background-color: cadetblue;
+    margin-bottom: 5px;
+}
