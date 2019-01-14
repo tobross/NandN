@@ -347,7 +347,7 @@ $(".statsbtn").click(function(){
 
 $(".charbtn").click(function(){
     $(".charcard").toggleClass("hide");
-    console.log($(this).text());
+    // console.log($(this).text());
     if ($(this).text()=="Unclaimed Characters"){
         $(this).text("Active Characters");
     }
