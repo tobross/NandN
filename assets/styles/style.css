@@ -75,7 +75,7 @@ body{
     background-color: rgba(0, 128, 0, 0.658);
     border: solid 2px black;
     /* border-radius: 25px; */
-    border-radius: 20px 0 20px 0;
+    border-radius: 0 0 20px 0;
 }
 
 .content {
@@ -95,4 +95,7 @@ body{
     width: auto;
     border: solid 2px black;
 
+}
+.navbar{
+    border-bottom: solid 2px black;
 }
