@@ -1,7 +1,7 @@
 var characters = [
     barbarian= {
         active: true,
-        image: "./assets/images/barb2.jpg",
+        image: "./assets/images/MDB.jpg",
         class: "Barbarian",
         name: "Bunhildo",
         playername: "Furb",
@@ -18,6 +18,7 @@ var characters = [
         WISMOD: "0",
         CHA: "15",
         CHAMOD: "+2"},
+        lang: "Common<br>Dwarvish",
         personality: {
             alignment: "Lawful Good",
             background: "Outlander",
@@ -26,7 +27,7 @@ var characters = [
     },
     bard= {
         active: false,
-        image: "./assets/images/bard.jpg",
+        image: "./assets/images/TB.jpg",
         class: "Bard",
         name: "---",
         playername: "",
@@ -43,6 +44,7 @@ var characters = [
         WISMOD: "+2",
         CHA: "18",
         CHAMOD: "+4"},
+        lang: "Common<br>Draconic",
         personality: {
             alignment: "Neutral",
             background: "Entertainer",
@@ -51,7 +53,7 @@ var characters = [
     },
     cleric= {
         active: true,
-        image: "./assets/images/cleric.jpg",
+        image: "./assets/images/HEC.jpg",
         class: "Cleric",
         name: "Sylfine",
         playername: "Izzy",
@@ -68,6 +70,7 @@ var characters = [
         WISMOD: "+3",
         CHA: "14",
         CHAMOD: "+2"},
+        lang: "Common<br>Elvish",
         personality: {
             alignment: "Chaotic Good",
             background: "Acolyte",
@@ -76,7 +79,7 @@ var characters = [
     },
     cleric= {
         active: false,
-        image: "./assets/images/cleric.jpg",
+        image: "./assets/images/GTC.jpg",
         class: "Cleric",
         name: "---",
         playername: "Shelby",
@@ -93,6 +96,7 @@ var characters = [
         WISMOD: "+3",
         CHA: "8",
         CHAMOD: "-1"},
+        lang: "Common<br>Gnomish<br>Halfling<br>Primordial",
         personality: {
             alignment: "Chaotic Good",
             background: "Acolyte",
@@ -101,7 +105,7 @@ var characters = [
     },
     druid= {
         active: false,
-        image: "./assets/images/bard.jpg",
+        image: "./assets/images/WED.png",
         class: "Druid",
         name: "---",
         playername: "John",
@@ -118,6 +122,7 @@ var characters = [
         WISMOD: "+4",
         CHA: "10",
         CHAMOD: "0"},
+        lang: "Common<br>Elvish<br>Gnoll",
         personality: {
             alignment: "Good",
             background: "Hermit",
@@ -126,7 +131,7 @@ var characters = [
     },
     fighter= {
         active: false,
-        image: "./assets/images/fighter.jpg",
+        image: "./assets/images/DBF.jpg",
         class: "Fighter",
         name: "---",
         playername: "---",
@@ -143,6 +148,7 @@ var characters = [
         WISMOD: "+1",
         CHA: "16",
         CHAMOD: "+3"},
+        lang: "Common<br>Draconic",
         personality: {
             alignment: "Good",
             background: "Soldier",
@@ -151,7 +157,7 @@ var characters = [
     },
     monk= {
         active: false,
-        image: "./assets/images/monk.jpg",
+        image: "./assets/images/HM.png",
         class: "Monk",
         name: "---",
         playername: "---",
@@ -168,6 +174,7 @@ var characters = [
         WISMOD: "+3",
         CHA: "12",
         CHAMOD: "+1"},
+        lang: "Common<br>Gnomish",
         personality: {
             alignment: "Lawful Good",
             background: "Hermit",
@@ -176,7 +183,7 @@ var characters = [
     },
     paladin= {
         active: false,
-        image: "./assets/images/paladin.jpg",
+        image: "./assets/images/HOP.jpg",
         class: "Paladin",
         name: "---",
         playername: "---",
@@ -193,6 +200,7 @@ var characters = [
         WISMOD: "+1",
         CHA: "14",
         CHAMOD: "+2"},
+        lang: "Common<br>Orc<br>Elvish",
         personality: {
             alignment: "Lawful Good",
             background: "Hermit",
@@ -201,7 +209,7 @@ var characters = [
     },
     ranger= {
         active: false,
-        image: "./assets/images/ranger.jpg",
+        image: "./assets/images/HR.jpg",
         class: "Ranger",
         name: "---",
         playername: "---",
@@ -218,6 +226,7 @@ var characters = [
         WISMOD: "+3",
         CHA: "11",
         CHAMOD: "0"},
+        lang: "Common",
         personality: {
             alignment: "Good",
             background: "Outlander",
@@ -226,7 +235,7 @@ var characters = [
     },
     rogue= {
         active: true,
-        image: "./assets/images/rogue.jpg",
+        image: "./assets/images/WER.jpg",
         class: "Rogue",
         name: "Collenconsci",
         playername: "David",
@@ -243,6 +252,7 @@ var characters = [
         WISMOD: "+3",
         CHA: "16",
         CHAMOD: "+3"},
+        lang: "Common<br>Elvish",
         personality: {
             alignment: "Chaotic Neutral",
             background: "Charlatan",
@@ -251,7 +261,7 @@ var characters = [
     },
     sorcerer= {
         active: true,
-        image: "./assets/images/sorc.jpg",
+        image: "./assets/images/GS.png",
         class: "Sorcerer",
         name: "Nifee",
         playername: "Namine",
@@ -268,6 +278,7 @@ var characters = [
         WISMOD: "+2",
         CHA: "16",
         CHAMOD: "+3"},
+        lang: "Common<br>Gnomish",
         personality: {
             alignment: "Good",
             background: "Sage",
@@ -293,6 +304,7 @@ var characters = [
         WISMOD: "",
         CHA: "",
         CHAMOD: ""},
+        lang: "Common",
         personality: {
             alignment: "",
             background: "",
@@ -301,7 +313,7 @@ var characters = [
     },
     wizard= {
         active: true,
-        image: "./assets/images/wiz.jpg",
+        image: "./assets/images/HEW.jpg",
         class: "Wizard",
         name: "Akasha",
         playername: "Babs",
@@ -318,10 +330,37 @@ var characters = [
         WISMOD: "-1",
         CHA: "15",
         CHAMOD: "+2"},
+        lang: "Common<br>Elvish",
         personality: {
             alignment: "Chaotic Good",
             background: "Sage",
             race: "High Elf"
+        }
+    },
+    wolf= {
+        active: true,
+        image: "./assets/images/wolf.jpg",
+        class: "Wolf",
+        name: "Trogdorg",
+        playername: "Tobey",
+        stats: {
+        STR: "12",
+        STRMOD: "+1",
+        DEX: "15",
+        DEXMOD: "+2",
+        CON: "12",
+        CONMOD: "+1",
+        INT: "3",
+        INTMOD: "-4",
+        WIS: "12",
+        WISMOD: "+1",
+        CHA: "6",
+        CHAMOD: "-2"},
+        lang: "Wolf<br>Animal",
+        personality: {
+            alignment: "Neutral",
+            background: "Hermit",
+            race: "Wolf"
         }
     }
 ]
@@ -330,7 +369,7 @@ var characters = [
 for (var i=0; i<characters.length; i++) {
     var charimg = "<img class='charimg' src='"+characters[i].image+"'alt='charimg'>";
 
-    var characterCard = $("<div class='card charcard' style='width: 18rem;'>"+charimg+"<div class='card-body'><h5 class='card-title'>"+characters[i].name+"</h5><h6>"+characters[i].class+"</h6><ul class='stats'><li>STR: "+characters[i].stats.STR+" MOD: ("+characters[i].stats.STRMOD+")</li><li>DEX: "+characters[i].stats.DEX+" MOD: ("+characters[i].stats.DEXMOD+")</li><li>CON: "+characters[i].stats.CON+" MOD: ("+characters[i].stats.CONMOD+")</li><li>INT: "+characters[i].stats.INT+" MOD: ("+characters[i].stats.INTMOD+")</li><li>WIS: "+characters[i].stats.WIS+" MOD: ("+characters[i].stats.WISMOD+")</li><li>CHA: "+characters[i].stats.CHA+" MOD: ("+characters[i].stats.CHAMOD+")</li></ul><a href='#' class='btn btn-warning statsbtn'>Character Page</a></div></div>")
+    var characterCard = $("<div class='card charcard' style='width: 18rem;'>"+charimg+"<div class='card-body'><h5 class='card-title'>"+characters[i].name+"</h5><h6>"+characters[i].class+"</h6><ul><li><button type='button' class='btn btn-warning stats'>Stats</button><ul class='statsList hide'><li>STR: "+characters[i].stats.STR+" MOD: ("+characters[i].stats.STRMOD+")</li><li>DEX: "+characters[i].stats.DEX+" MOD: ("+characters[i].stats.DEXMOD+")</li><li>CON: "+characters[i].stats.CON+" MOD: ("+characters[i].stats.CONMOD+")</li><li>INT: "+characters[i].stats.INT+" MOD: ("+characters[i].stats.INTMOD+")</li><li>WIS: "+characters[i].stats.WIS+" MOD: ("+characters[i].stats.WISMOD+")</li><li>CHA: "+characters[i].stats.CHA+" MOD: ("+characters[i].stats.CHAMOD+")</li></ul></li><li><button type='button' class='btn btn-warning pers'>Personality</button><ul class='pList hide'><li>Background: "+characters[i].personality.background+"</li><li>Alignment: "+characters[i].personality.alignment+"</li><li>Race: "+characters[i].personality.race+"</li></ul></li><li><button type='button' class='btn btn-warning lang'>Languages</button><ul class='langList hide'><li>"+characters[i].lang+"</li></ul></li></ul></div></div>")
 
     if (characters[i].active === true){
     $(".cardbox").append($(characterCard));
@@ -364,4 +403,20 @@ $(".charbtn").click(function(){
 // }
 //     }
     });
+
+    $(".charcard").on("click", ".btn", function() {
+        // $(this).addClass("hide");
+        // console.log(this);
+        // console.log($(this).parent().children(".storydata"));
+        if ($(this).hasClass("stats")){
+            // console.log("whoo!");
+        $(this).parent().children(".statsList").toggleClass("hide")
+        }
+        else if ($(this).hasClass("pers")){
+            $(this).parent().children(".pList").toggleClass("hide")
+        }
+        else if ($(this).hasClass("lang")){
+            $(this).parent().children(".langList").toggleClass("hide")
+        };
+    })
 
