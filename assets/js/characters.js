@@ -467,7 +467,7 @@ var characters = [
 for (var i=0; i<characters.length; i++) {
     var charimg = "<img class='charimg' src='"+characters[i].image+"'alt='charimg'>";
 
-    var characterCard = $("<div class='card charcard' style='width: 18rem;'>"+charimg+"<div class='card-body'><h5 class='card-title'>"+characters[i].name+"</h5><h6>"+characters[i].class+"</h6><ul><li><button type='button' class='btn btn-warning stats'>Stats</button><ul class='statsList hide'><li>STR: "+characters[i].stats.STR+" MOD: ("+characters[i].stats.STRMOD+")</li><li>DEX: "+characters[i].stats.DEX+" MOD: ("+characters[i].stats.DEXMOD+")</li><li>CON: "+characters[i].stats.CON+" MOD: ("+characters[i].stats.CONMOD+")</li><li>INT: "+characters[i].stats.INT+" MOD: ("+characters[i].stats.INTMOD+")</li><li>WIS: "+characters[i].stats.WIS+" MOD: ("+characters[i].stats.WISMOD+")</li><li>CHA: "+characters[i].stats.CHA+" MOD: ("+characters[i].stats.CHAMOD+")</li></ul></li><li><button type='button' class='btn btn-warning pers'>Personality</button><ul class='pList hide'><li>Background: "+characters[i].personality.background+"</li><li>Alignment: "+characters[i].personality.alignment+"</li><li>Race: "+characters[i].personality.race+"</li></ul></li><li><button type='button' class='btn btn-warning lang'>Languages</button><ul class='langList hide'><li>"+characters[i].lang+"</li></ul></li><li><button type='button' class='btn btn-warning item'>Special Items</button><ul class='sItems hide'><li class='itemImg'><img class='itemimg' src='"+characters[i].sItems.item.image+"'alt='itemimg'></li><li><b>"+characters[i].sItems.item.name+"</b></li><li>"+characters[i].sItems.item.stats+"</li></ul></li></ul></div></div>")
+    var characterCard = $("<div class='card charcard' style='width: 18rem;'>"+charimg+"<div class='card-body'><h5 class='card-title'>"+characters[i].name+"</h5><h6>"+characters[i].class+"</h6><ul><li><button type='button' class='btn btn-warning stats'>Stats</button><ul class='statsList hide'><li>STR: "+characters[i].stats.STR+" MOD: ("+characters[i].stats.STRMOD+")</li><li>DEX: "+characters[i].stats.DEX+" MOD: ("+characters[i].stats.DEXMOD+")</li><li>CON: "+characters[i].stats.CON+" MOD: ("+characters[i].stats.CONMOD+")</li><li>INT: "+characters[i].stats.INT+" MOD: ("+characters[i].stats.INTMOD+")</li><li>WIS: "+characters[i].stats.WIS+" MOD: ("+characters[i].stats.WISMOD+")</li><li>CHA: "+characters[i].stats.CHA+" MOD: ("+characters[i].stats.CHAMOD+")</li></ul></li><li><button type='button' class='btn btn-warning pers'>Personality</button><ul class='pList hide'><li>Background: "+characters[i].personality.background+"</li><li>Alignment: "+characters[i].personality.alignment+"</li><li>Race: "+characters[i].personality.race+"</li></ul></li><li><button type='button' class='btn btn-warning lang'>Languages</button><ul class='langList hide'><li>"+characters[i].lang+"</li></ul></li><li><button type='button' class='btn btn-warning item'>Special Items</button><ul class='sItems hide'><li class='itemImg'><img class='itemimg' src='"+characters[i].sItems.item.image+"'alt='"+characters[i].sItems.item.name+"'></li><li><b>"+characters[i].sItems.item.name+"</b></li><li>"+characters[i].sItems.item.stats+"</li></ul></li></ul></div></div>")
 
     if (characters[i].active === true){
     $(".cardbox").append($(characterCard));
@@ -517,7 +517,14 @@ $(".charbtn").click(function(){
             $(this).parent().children(".langList").toggleClass("hide")
         }
         else if ($(this).hasClass("item")){
+            // console.log($(this).parent().children(".sItems").children(".itemImg").children(".itemimg").attr("alt"))
+            if($(this).parent().children(".sItems").children(".itemImg").children(".itemimg").attr("alt")== ""){
+
+            }
+            else{
+                
             $(this).parent().children(".sItems").toggleClass("hide")
+            }
         };
     })
 
