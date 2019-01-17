@@ -23,6 +23,13 @@ var characters = [
             alignment: "Lawful Good",
             background: "Outlander",
             race: "Mountain Dwarf"
+        },
+        sItems: {
+            item: {
+                name: "Hewn",
+                image: "./assets/images/hewn.png",
+                stats: "<p>This axe has the power to destroy your home in the forest, and yet, provide life through providing you with kindling for fire</p><br><p>When you fell an enemy, regain 2d6 (7) HP</p>"
+            }
         }
     },
     bard= {
@@ -49,6 +56,13 @@ var characters = [
             alignment: "Neutral",
             background: "Entertainer",
             race: "Tiefling"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     cleric= {
@@ -75,6 +89,13 @@ var characters = [
             alignment: "Chaotic Good",
             background: "Acolyte",
             race: "Half-Elf"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     cleric= {
@@ -101,6 +122,13 @@ var characters = [
             alignment: "Chaotic Good",
             background: "Acolyte",
             race: "Rock Gnome"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     druid= {
@@ -127,6 +155,13 @@ var characters = [
             alignment: "Good",
             background: "Hermit",
             race: "Wood Elf"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     fighter= {
@@ -153,6 +188,13 @@ var characters = [
             alignment: "Good",
             background: "Soldier",
             race: "White Dragonborn"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     monk= {
@@ -179,6 +221,13 @@ var characters = [
             alignment: "Lawful Good",
             background: "Hermit",
             race: "Lightfoot Halfling"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     paladin= {
@@ -205,6 +254,13 @@ var characters = [
             alignment: "Lawful Good",
             background: "Hermit",
             race: "Half-Orc"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     ranger= {
@@ -231,6 +287,13 @@ var characters = [
             alignment: "Good",
             background: "Outlander",
             race: "Human"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     rogue= {
@@ -257,6 +320,13 @@ var characters = [
             alignment: "Chaotic Neutral",
             background: "Charlatan",
             race: "Wood Elf"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     sorcerer= {
@@ -283,6 +353,13 @@ var characters = [
             alignment: "Good",
             background: "Sage",
             race: "Rock Gnome"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     warlock= {
@@ -309,6 +386,13 @@ var characters = [
             alignment: "",
             background: "",
             race: ""
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     wizard= {
@@ -335,6 +419,13 @@ var characters = [
             alignment: "Chaotic Good",
             background: "Sage",
             race: "High Elf"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     },
     wolf= {
@@ -361,6 +452,13 @@ var characters = [
             alignment: "Neutral",
             background: "Hermit",
             race: "Wolf"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
         }
     }
 ]
@@ -369,7 +467,7 @@ var characters = [
 for (var i=0; i<characters.length; i++) {
     var charimg = "<img class='charimg' src='"+characters[i].image+"'alt='charimg'>";
 
-    var characterCard = $("<div class='card charcard' style='width: 18rem;'>"+charimg+"<div class='card-body'><h5 class='card-title'>"+characters[i].name+"</h5><h6>"+characters[i].class+"</h6><ul><li><button type='button' class='btn btn-warning stats'>Stats</button><ul class='statsList hide'><li>STR: "+characters[i].stats.STR+" MOD: ("+characters[i].stats.STRMOD+")</li><li>DEX: "+characters[i].stats.DEX+" MOD: ("+characters[i].stats.DEXMOD+")</li><li>CON: "+characters[i].stats.CON+" MOD: ("+characters[i].stats.CONMOD+")</li><li>INT: "+characters[i].stats.INT+" MOD: ("+characters[i].stats.INTMOD+")</li><li>WIS: "+characters[i].stats.WIS+" MOD: ("+characters[i].stats.WISMOD+")</li><li>CHA: "+characters[i].stats.CHA+" MOD: ("+characters[i].stats.CHAMOD+")</li></ul></li><li><button type='button' class='btn btn-warning pers'>Personality</button><ul class='pList hide'><li>Background: "+characters[i].personality.background+"</li><li>Alignment: "+characters[i].personality.alignment+"</li><li>Race: "+characters[i].personality.race+"</li></ul></li><li><button type='button' class='btn btn-warning lang'>Languages</button><ul class='langList hide'><li>"+characters[i].lang+"</li></ul></li></ul></div></div>")
+    var characterCard = $("<div class='card charcard' style='width: 18rem;'>"+charimg+"<div class='card-body'><h5 class='card-title'>"+characters[i].name+"</h5><h6>"+characters[i].class+"</h6><ul><li><button type='button' class='btn btn-warning stats'>Stats</button><ul class='statsList hide'><li>STR: "+characters[i].stats.STR+" MOD: ("+characters[i].stats.STRMOD+")</li><li>DEX: "+characters[i].stats.DEX+" MOD: ("+characters[i].stats.DEXMOD+")</li><li>CON: "+characters[i].stats.CON+" MOD: ("+characters[i].stats.CONMOD+")</li><li>INT: "+characters[i].stats.INT+" MOD: ("+characters[i].stats.INTMOD+")</li><li>WIS: "+characters[i].stats.WIS+" MOD: ("+characters[i].stats.WISMOD+")</li><li>CHA: "+characters[i].stats.CHA+" MOD: ("+characters[i].stats.CHAMOD+")</li></ul></li><li><button type='button' class='btn btn-warning pers'>Personality</button><ul class='pList hide'><li>Background: "+characters[i].personality.background+"</li><li>Alignment: "+characters[i].personality.alignment+"</li><li>Race: "+characters[i].personality.race+"</li></ul></li><li><button type='button' class='btn btn-warning lang'>Languages</button><ul class='langList hide'><li>"+characters[i].lang+"</li></ul></li><li><button type='button' class='btn btn-warning item'>Special Items</button><ul class='sItems hide'><li class='itemImg'><img class='itemimg' src='"+characters[i].sItems.item.image+"'alt='itemimg'></li><li><b>"+characters[i].sItems.item.name+"</b></li><li>"+characters[i].sItems.item.stats+"</li></ul></li></ul></div></div>")
 
     if (characters[i].active === true){
     $(".cardbox").append($(characterCard));
@@ -417,6 +515,9 @@ $(".charbtn").click(function(){
         }
         else if ($(this).hasClass("lang")){
             $(this).parent().children(".langList").toggleClass("hide")
+        }
+        else if ($(this).hasClass("item")){
+            $(this).parent().children(".sItems").toggleClass("hide")
         };
     })
 

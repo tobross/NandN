@@ -75,10 +75,12 @@ body{
     color: #fff;
     background-color: #00b3db;
     border-color: #285e8e; /*set the color you want here*/
+    
 }
 .btn{
     border: 2px solid black;
     font-weight: bold;
+    color: black;
 }
 
 .title {
@@ -135,4 +137,7 @@ body{
 		1px 1px 0 #000;
 
   }
-  
+  .itemimg {
+      max-width: 100px;
+      max-height: auto;
+  }
