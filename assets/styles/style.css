@@ -141,3 +141,15 @@ body{
       max-width: 100px;
       max-height: auto;
   }
+  .sItems {
+      border:  2px rgb(61, 33, 10);
+      border-radius: 20px;
+      border-style: double;
+      border-width: 5px;
+  }
+  .itemimg {
+    border:  2px rgb(61, 33, 10);
+    border-radius: 20px;
+    border-style: double;
+    border-width: 5px;
+  }
