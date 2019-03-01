@@ -1,8 +1,51 @@
+// function Char(active, image, cClass, name, playername, STR, STRMOD, DEX, DEXMOD, CON, CONMOD, INT, INTMOD, WIS, WISMOD, CHA, CHAMOD, lang, alignment, background, race, itemName, itemImage, itemStats) {
+//     this.active=active;
+//     this.image=image;
+//     this.cClass=cClass;
+//     this.name=name;
+//     this.playername=playername;
+//     this.stats={};
+//     this.stats.STR=STR;
+//     this.stats.STRMOD=STRMOD;
+//     this.stats.DEX=DEX;
+//     this.stats.DEXMOD=DEXMOD;
+//     this.stats.CON=CON;
+//     this.stats.CONMOD=CONMOD;
+//     this.stats.INT=INT;
+//     this.stats.INTMOD=INTMOD;
+//     this.stats.WIS=WIS;
+//     this.stats.WISMOD=WISMOD;
+//     this.stats.CHA=CHA;
+//     this.stats.CHAMOD=CHAMOD;
+//     this.lang=lang;
+//     this.personality={};
+//     this.personality.alignment=alignment;
+//     this.personality.background=background;
+//     this.personality.race=race;
+//     this.sItems= {};
+//     this.sItems.item = {};
+//     this.sItems.item.name = itemName;
+//     this.sItems.item.image = itemImage;
+//     this.sItems.item.stats = itemStats;
+
+//     // this.hp = function(){
+//     //     var hitpoints = CONMOD * (Math.floor(Math.random()*12)+1);
+//     //     console.log(hitpoints)
+//     // }
+// };
+
+// brunhildo = new Char(true, ".assets/images/MDB.jpg", "Barbarian", "Brunhildo", "Furb", 19, +4, 12, +1, 19, +4, 8, -1, 11, 0, 15, +2, "Common<br>Dwarvish", "Lawful Good", "Outlander", "Mountain Dwarf", "Hewn", "./assets/images/hewn.png", "<p>This axe has the power to destroy your home in the forest, and yet, provide life through providing you with kindling for fire</p><br><p>When you fell an enemy, regain 2d6 (7) HP</p>");
+
+// console.log(brunhildo);
+// brunhildo.hp();
+
+
+
 var characters = [
     barbarian= {
         active: true,
         image: "./assets/images/MDB.jpg",
-        class: "Barbarian",
+        cClass: "Barbarian",
         name: "Bunhildo",
         playername: "Furb",
         stats: {
@@ -33,11 +76,11 @@ var characters = [
         }
     },
     bard= {
-        active: false,
+        active: true,
         image: "./assets/images/TB.jpg",
         class: "Bard",
-        name: "---",
-        playername: "",
+        name: "Najean",
+        playername: "Najean",
         stats: {
         STR: "10",
         STRMOD: "0",
@@ -132,10 +175,10 @@ var characters = [
         }
     },
     druid= {
-        active: false,
+        active: true,
         image: "./assets/images/WED.png",
         class: "Druid",
-        name: "---",
+        name: "John",
         playername: "John",
         stats: {
         STR: "13",
