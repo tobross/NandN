@@ -178,7 +178,7 @@ var characters = [
         active: true,
         image: "./assets/images/WED.png",
         class: "Druid",
-        name: "John",
+        name: "Belias Darkstalker",
         playername: "John",
         stats: {
         STR: "13",
@@ -198,6 +198,39 @@ var characters = [
             alignment: "Good",
             background: "Hermit",
             race: "Wood Elf"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
+        }
+    },
+    fighter= {
+        active: true,
+        image: "./assets/images/TF.jpg",
+        class: "Fighter",
+        name: "Dune Amongst the Setting Sun",
+        playername: "Seger",
+        stats: {
+        STR: "14",
+        STRMOD: "+2",
+        DEX: "17",
+        DEXMOD: "+3",
+        CON: "15",
+        CONMOD: "+2",
+        INT: "14",
+        INTMOD: "+2",
+        WIS: "14",
+        WISMOD: "+2",
+        CHA: "15",
+        CHAMOD: "+2"},
+        lang: "Common<br>Dwarvish<br>Draconic",
+        personality: {
+            alignment: "Chaotic Good",
+            background: "Noble",
+            race: "Tabaxi"
         },
         sItems: {
             item: {
