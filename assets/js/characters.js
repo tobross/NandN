@@ -405,6 +405,39 @@ var characters = [
             }
         }
     },
+    pirate= {
+        active: false,
+        image: "./assets/images/TP.jpg",
+        class: "Pirate",
+        name: "Sleight Paw (Paw)",
+        playername: "Tobey",
+        stats: {
+        STR: "11",
+        STRMOD: "0",
+        DEX: "19",
+        DEXMOD: "+4",
+        CON: "12",
+        CONMOD: "+1",
+        INT: "10",
+        INTMOD: "0",
+        WIS: "14",
+        WISMOD: "+2",
+        CHA: "16",
+        CHAMOD: "+3"},
+        lang: "Common<br>Gnoll",
+        personality: {
+            alignment: "Good",
+            background: "Criminal",
+            race: "Tabaxi"
+        },
+        sItems: {
+            item: {
+                name: "",
+                image: "",
+                stats: ""
+            }
+        }
+    },
     sorcerer= {
         active: true,
         image: "./assets/images/GS.png",
